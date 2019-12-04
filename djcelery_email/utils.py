@@ -1,10 +1,10 @@
 import copy
 import base64
+import six
 from email.mime.base import MIMEBase
 
 from django.conf import settings
 from django.core.mail import EmailMultiAlternatives, EmailMessage
-from django.utils import six
 
 
 def chunked(iterator, chunksize):
